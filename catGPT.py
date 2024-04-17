@@ -9,7 +9,7 @@ meowPath = '/Users/nlehr24/Downloads/440Meows.wav'
 
 sigFigs = 3    # number found from trial and error, not certain why others work so differently
 
-def writeMeowFile():    # no need to run this after written once?
+def writeMeowFile():    # no need to call this after written once
     meows = []
     for subdir, dirs, files in os.walk(rootdir):
         meows = files
