@@ -164,7 +164,7 @@ def showNumber(pixels):
 def main():
     # splitting input/correction data into training and testing sets
     # X = input, Y = desired output
-    X_test, Y_test, X_train, Y_train = initializeData('/Users/nlehr24/Downloads/mnist.csv')
+    X_test, Y_test, X_train, Y_train = initializeData('/Users/nlehr24/Downloads/mnist_train.csv')    # downloaded from https://pjreddie.com/projects/mnist-in-csv/#google_vignette. Only loading in training data for personal splitting.
 
     layerSizesList = [X_test.shape[0], 32, len(np.unique(Y_test))]  # using test data for shape just so less processing
 
